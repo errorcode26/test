@@ -1,0 +1,8 @@
+# Base Web Requirements
+-r requirements.txt
+
+# Windows Desktop Specific
+pywebview==4.4.1
+pythonnet==3.0.3
+pyinstaller==6.3.0
+pillow==10.1.0

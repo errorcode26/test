@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: lims-website
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: PYTHONPATH=. gunicorn app:app
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11
+      - key: LIMS_MODE
+        value: production
